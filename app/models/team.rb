@@ -1,15 +1,15 @@
 class Team
-    attr_accessor :name, :motto
+  attr_accessor :name, :motto
 
-    @@all = []
+  @@all = []
 
-    def initialize(hash)
-        @name = hash[:name]
-        @motto = hash[:motto]
-        @@all << self
-    end
+  def initialize(hash)
+      @name = hash[:name]
+      @motto = hash[:motto]
+      @@all << self
+  end
 
-    def self.all
-        @@all
-    end
+  def self.all
+      @@all
+  end
 end
